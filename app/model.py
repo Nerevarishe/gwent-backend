@@ -38,5 +38,9 @@ class Card(DefaultDocument):
     # row = fl.StringField(choices=[])
     # ability =
 
-
     
+class Deck(DefaultDocument):
+    # user
+    name = fl.StringField(max_length=20, require=True, null=False)
+    # cards =
+    # active
