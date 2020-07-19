@@ -6,6 +6,9 @@ class DefaultDocument(Document):
     date_created = fl.DateTimeField(default=datetime.utcnow)
     date_edited = fl.DateTimeField(default=datetime.utcnow)
     
+    def refresh_date_edited(self):
+        self.date_edited = datetime.utcnow()
+    
     
 class User(DefaultDocument):
     username = fl.StringField(min_length=2, max_length=20, required=True, unique=True, null=False)
