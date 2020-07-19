@@ -44,3 +44,18 @@ class Deck(DefaultDocument):
     name = fl.StringField(max_length=20, require=True, null=False)
     # cards =
     # active
+
+
+class GameSession(DefaultDocument):
+#     session_stage= creating_game, waiting_opponent, playing, finished
+#     player1= ref to user
+#     player1_deck = get shuffled user's active deck
+#     player1_rows
+#     player1_retreat
+#     player2= ref to user
+#     player2_deck = get shuffled user's active deck
+#     player2_rows
+#     player2_retreat
+#     who_win
+#     who_loose
+    pass
